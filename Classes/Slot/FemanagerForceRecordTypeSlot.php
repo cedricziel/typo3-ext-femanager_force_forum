@@ -5,7 +5,7 @@ namespace CedricZiel\FemanagerForceForum\Slot;
 use TYPO3\CMS\Core\Database\DatabaseConnection;
 use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
 
-class FeManagerForceRecordTypeSlot
+class FemanagerForceRecordTypeSlot
 {
     /**
      * @param FrontendUser $user

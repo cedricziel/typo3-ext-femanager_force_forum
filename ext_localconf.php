@@ -6,7 +6,7 @@ $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TY
 $signalSlotDispatcher->connect(
     'In2code\Femanager\Controller\NewController',
     'finalCreateAfterPersist',
-    CedricZiel\FemanagerForceForum\Slot\FeManagerForceRecordTypeSlot::class,
+    CedricZiel\FemanagerForceForum\Slot\FemanagerForceRecordTypeSlot::class,
     'force',
     FALSE
 );
