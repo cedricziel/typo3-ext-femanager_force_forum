@@ -9,9 +9,14 @@ class FemanagerForceRecordTypeSlot
 {
     /**
      * @param FrontendUser $user
+     * @param string       $operation
      */
-    public function force($user)
+    public function force($user, $operation)
     {
+        if (!$user instanceof FrontendUser) {
+            return;
+        }
+
         $database = $this->getDatabase();
         $database->exec_UPDATEquery(
             'fe_users',
